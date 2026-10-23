@@ -1,0 +1,133 @@
+{
+  "after-pavers-1.jpg": {
+    "width": 1406,
+    "height": 469,
+    "alt": "Same paver driveway after cleaning and sealing, the red and brown tones deep again, taped off to cure",
+    "base": "after-pavers-1",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "after-pavers-2.jpg": {
+    "width": 1800,
+    "height": 960,
+    "alt": "Same paver driveway right after sealing, darker richer color with caution tape keeping cars off",
+    "base": "after-pavers-2",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "before-pavers-1.jpg": {
+    "width": 2007,
+    "height": 670,
+    "alt": "Faded paver driveway before cleaning and sealing, the brick color dull and gray across the surface",
+    "base": "before-pavers-1",
+    "sizes": [
+      640,
+      1024,
+      1920
+    ]
+  },
+  "before-pavers-2.jpg": {
+    "width": 1800,
+    "height": 960,
+    "alt": "Cleaned paver driveway before sealer goes on, the brick still pale with a light chalky film",
+    "base": "before-pavers-2",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "hero-pavers-sealed-wide.jpg": {
+    "width": 1800,
+    "height": 864,
+    "alt": "Freshly sealed brick paver driveway apron with deep red and tan color, taped off while the sealer dries",
+    "base": "hero-pavers-sealed-wide",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-driveway-1.jpg": {
+    "width": 1800,
+    "height": 1584,
+    "alt": "Concrete driveway partway through cleaning, a clean wet section next to dark mildewed concrete and a surface cleaner",
+    "base": "service-driveway-1",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-driveway-2.jpg": {
+    "width": 1800,
+    "height": 960,
+    "alt": "Concrete driveway after pressure washing, an even light gray surface running down to the street",
+    "base": "service-driveway-2",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-house-washing-1.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "alt": "Vinyl siding before a house wash, green algae and mildew streaks across the panels around a window",
+    "base": "service-house-washing-1",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-house-washing-2.jpg": {
+    "width": 1800,
+    "height": 2400,
+    "alt": "Cream vinyl siding on a home after a house wash, clean panels and bright white skirting under blue sky",
+    "base": "service-house-washing-2",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-pavers-1.jpg": {
+    "width": 1800,
+    "height": 864,
+    "alt": "Brick paver driveway after cleaning, even color across the pavers with sealer starting along the curb edge",
+    "base": "service-pavers-1",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-pavers-2.jpg": {
+    "width": 1800,
+    "height": 720,
+    "alt": "Paver driveway and sidewalk apron mid job, with a surface cleaner on the grass and a sprayer by the walkway",
+    "base": "service-pavers-2",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-pavers-3.jpg": {
+    "width": 1800,
+    "height": 696,
+    "alt": "Sealed paver driveway apron behind yellow caution tape, the brick dark and glossy beside the sidewalk",
+    "base": "service-pavers-3",
+    "sizes": [
+      640,
+      1024
+    ]
+  },
+  "service-pavers-4.jpg": {
+    "width": 1800,
+    "height": 816,
+    "alt": "Paver driveway apron partway through sealing, wet sealed brick next to drier pavers still to be coated",
+    "base": "service-pavers-4",
+    "sizes": [
+      640,
+      1024
+    ]
+  }
+}
