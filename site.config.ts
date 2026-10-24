@@ -272,8 +272,32 @@ const siteConfig = {
       'service-pavers-3.jpg',
       'hero-pavers-sealed-wide.jpg',
     ],
-    heroVideo: null,
+    heroVideo: {
+      desktop: '/video/video-hero-pavers-desktop.mp4',
+      mobile: '/video/video-hero-pavers-mobile.mp4',
+    },
   },
+
+  videoBands: [
+    {
+      desktop: '/video/video-house-wash-desktop.mp4',
+      mobile: '/video/video-house-wash-mobile.mp4',
+      poster: '/video/video-house-wash-poster.jpg',
+      alt: 'Wand rinsing the soffit and stucco of a one-story house',
+      eyebrow: 'House washing',
+      heading: 'Quality work on every surface',
+      body: 'House washing, paver cleaning and sealing, driveways, pool decks, enclosures and gutters, for homes across the Treasure Coast and Palm Beach County.',
+    },
+    {
+      desktop: '/video/video-driveway-desktop.mp4',
+      mobile: '/video/video-driveway-mobile.mp4',
+      poster: '/video/video-driveway-poster.jpg',
+      alt: 'Surface cleaner on a concrete driveway, half cleaned, showing the line',
+      eyebrow: 'Driveway cleaning',
+      heading: 'See the difference on your driveway',
+      body: 'Concrete and paver driveways pick up mildew, algae and tire marks. Cleaning takes the film off and brings the color back.',
+    },
+  ],
 
   contactForm: {
     splitName: false,

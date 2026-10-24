@@ -40,19 +40,36 @@ IMG_8181 and IMG_8183 are probably the same house, but they are shot from differ
 
 ## Videos
 
-| Source | Duration | Dimensions | Size | Result |
+| source | duration | orientation | class | role |
 |---|---|---|---|---|
-| IMG_0087.MOV | 27.1s | 1080x1920 | 28.2MB | skipped |
-| IMG_0240.MOV | 32.5s | 1080x1920 | 34.5MB | skipped |
-| IMG_0288.MOV | 22.9s | 1080x1920 | 24.8MB | skipped |
-| IMG_0289.MOV | 26.9s | 1080x1920 | 29.1MB | skipped |
-| IMG_0311.MOV | 17.6s | 1080x1920 | 24.4MB | skipped |
-| IMG_8644.MOV | 11.4s | 1080x1920 | 12.1MB | skipped |
-| IMG_9940.MOV | 20.7s | 1920x1080 | 22.2MB | skipped (the only landscape clip) |
-| IMG_9985.MOV | 25.1s | 1080x1920 | 26.7MB | skipped |
+| IMG_0311.MOV | 17.6s | portrait | work: surface cleaner on pavers, foam, no people | hero (desktop center crop 16:9, mobile portrait) |
+| IMG_0087.MOV | 27.1s | portrait | work: house wash, wand on soffit and stucco, operator from behind | band 1, house washing |
+| IMG_8644.MOV | 11.4s | portrait | work: surface cleaner on concrete, clean line visible, operator's shadow only | band 2, driveway cleaning |
+| IMG_9940.MOV | 20.7s | landscape | owner selfie with a group of customers at a garage | reject: customer faces |
+| IMG_0240.MOV | 32.5s | portrait | owner selfie with a customer in front of his house | reject: customer face |
+| IMG_0288.MOV | 22.9s | portrait | customer speaking to camera on his driveway, caution tape, house visible | reject: customer face, house identifiable |
+| IMG_0289.MOV | 26.9s | portrait | owner with a customer at the truck | reject: customer face |
+| IMG_9985.MOV | 25.1s | portrait | owner selfie with a customer on the street | reject: customer face |
 
-ffmpeg is not installed and Homebrew is not installed on this Mac, so nothing could be re-encoded or inspected frame by frame. The rule for that case keeps only videos already in `.mp4` under 10MB; none qualify. No video is on the site and `public/video/` does not exist. To add them later: install ffmpeg, encode per the build prompt (h264, yuv420p, no audio, 1280px long edge, crf 28, faststart, under 8MB), and set `images.heroVideo` or add a section band with `components/SectionVideo.tsx`.
+Encoding: h264, yuv420p, crf 28 for the bands, crf 31 for the hero, 30fps, no audio, faststart, `-map_metadata -1`. Desktop variants are a 1080x608 center crop of the portrait source; mobile variants are 720x1280.
+
+| file | dimensions | duration | size |
+|---|---|---|---|
+| `public/video/video-hero-pavers-desktop.mp4` | 1080x608 | 17.6s | 4.2MB |
+| `public/video/video-hero-pavers-mobile.mp4` | 720x1280 | 17.6s | 3.9MB |
+| `public/video/video-house-wash-desktop.mp4` | 1080x608 | 27.1s | 1.6MB |
+| `public/video/video-house-wash-mobile.mp4` | 720x1280 | 27.1s | 2.4MB |
+| `public/video/video-house-wash-poster.jpg` | 1080x608 | | 22KB |
+| `public/video/video-driveway-desktop.mp4` | 1080x608 | 11.4s | 1.8MB |
+| `public/video/video-driveway-mobile.mp4` | 720x1280 | 11.4s | 2.2MB |
+| `public/video/video-driveway-poster.jpg` | 1080x608 | | 116KB |
+
+The hero clip has no separate poster: `images.hero` (`hero-pavers-sealed-wide.jpg`) is its poster and the LCP element.
+
+The five rejected clips are customer testimonials on camera. They are not background footage. If the owner confirms those customers agreed to appear on the site, they can become a click-to-play testimonial section later; nothing in this build uses them.
 
 ## Logo colors
 
 None. No logo was supplied or found, so the palette is the brief's fallback water palette (see theme.ts).
+
+The operator's shirt in IMG_0087 reads CHOCO'S. Together with the Facebook ad for Choco's Pressure Cleaning, this is evidence the business name is not spelled Shocos. Unresolved until the owner confirms.

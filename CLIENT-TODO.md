@@ -1,6 +1,6 @@
 # Questions for the owner
 
-How exactly is the business name spelled, and what is the legal name?
+How exactly is the business name spelled, and what is the legal name? The shirt in your house-washing video says CHOCO'S. Is that the name?
 What platform account slug should the website use? (Jacob sets this once you are signed up.)
 Which domain do you want for the website?
 What is your name, if you want it on the site?
@@ -29,10 +29,10 @@ Photos of pool enclosure cleaning: none yet.
 Photos of gutter cleaning: none yet.
 A before and after of a house wash taken from the same spot, so it can go in a before and after slider.
 A photo of you, your truck or your rig at work (no customer faces), for a crew section.
-Your videos are not on the site yet because they could not be converted here; we will add them once they are.
 One wide, landscape photo of finished work for the top of the homepage.
 
 ## Other
 
 A customer texted you a thank-you about a pool enclosure job (the screenshot you sent). Would that customer agree to it being posted as a review, with their first name? If so, please ask them to leave it on your Google profile.
 The quote form can only list the six services plus "Not sure yet"; a "Several of these" option is not available in the form right now. Is that OK?
+Five of the videos you sent show customers on camera. Did they agree to be on your website? If yes, we can add them as a testimonial section.

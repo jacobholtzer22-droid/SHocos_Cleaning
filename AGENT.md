@@ -29,6 +29,13 @@ Whatever you switch on, the posted payload keys never change. Extra answers are
 folded into `name` and `message`, because the platform parses only those. Never
 add a key to the request: it would be accepted, ignored, and the answer lost.
 
+Video. `images.heroVideo` adds footage over the full-bleed hero (the hero image
+stays the poster). `videoBands` holds zero to two mid-page bands rendered by
+`components/VideoBand.tsx`: index 0 after the What We Clean section, index 1
+after the process steps. Paths are public URLs under `/video/`. The clips are
+the client's own footage, encoded off-machine (h264, no audio, under 5MB each,
+metadata stripped).
+
 Then run `npx tsc --noEmit` and confirm the config parses.
 Phase 2: Design direction
 This phase decides whether the site looks bought or built. It is not optional.

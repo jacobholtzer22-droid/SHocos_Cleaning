@@ -24,6 +24,8 @@ next-env.d.ts
 *.MOV
 *.mov
 *.mp4
+# Encoded site footage is committed; only raw drops are ignored.
+!public/video/*.mp4
 
 # local tooling
 .claude/

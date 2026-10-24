@@ -271,6 +271,27 @@ export const siteConfigSchema = z
     }),
 
     /**
+     * Mid-page bands with the client's own footage behind a short block of copy
+     * and the quote CTA. Rendered by components/VideoBand.tsx. Paths are public
+     * URLs under /public. Zero to two bands; the homepage places index 0 after
+     * the What We Clean section and index 1 after the process steps.
+     */
+    videoBands: z
+      .array(
+        z.object({
+          desktop: z.string().min(2),
+          mobile: z.string().min(2),
+          poster: z.string().min(2),
+          alt: z.string().min(10),
+          eyebrow: z.string().nullable(),
+          heading: z.string().min(8),
+          body: z.string().min(20),
+        }),
+      )
+      .max(2)
+      .default([]),
+
+    /**
      * Extra fields on the contact form. OPTIONAL, and off by default.
      *
      * Omit the whole block and the form renders exactly the fields it has
@@ -416,6 +437,7 @@ export type Service = SiteConfigParsed['services'][number]
 export type ServiceArea = SiteConfigParsed['serviceAreas'][number]
 export type Review = SiteConfigParsed['reviews'][number]
 export type Faq = SiteConfigParsed['faqs'][number]
+export type VideoBand = SiteConfigParsed['videoBands'][number]
 export type Hours = NonNullable<SiteConfigParsed['hours']>
 export type Display = z.output<typeof display>
 export type Copy = SiteConfigParsed['copy']
